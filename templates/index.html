@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Etheral Foundation Network</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #000000);
+            min-height: 100vh;
+            display: flex;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #3a3a3a;
+            border-radius: 5px;
+            width: 100%;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #4a4a4a;
+        }
+
+        .sidebar a img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Main content */
+        .container {
+            margin-left: 220px; /* Leaves space for the sidebar */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(100% - 220px);
+        }
+
+        .box {
+            width: 100%;
+            max-width: 800px;
+            background-color: #2a2a2a;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .box h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .box p {
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar with Home and Wiki buttons -->
+    <div class="sidebar">
+        <a href="https://api.example.com/api/scp_sl/plr_count/">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/stack.png" alt="Home Icon">
+            SCP:SL API
+        </a>
+        <a href="https://api.example.com/api/mc/plr_count/">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/block.png" alt="Home Icon">
+            Minecraft API
+        </a>
+
+    </div>
+
+    <!-- Main content with centered boxes -->
+    <div class="container">
+        <div class="box">
+            <h1>This is a public use API for our player count.</h1>
+            <p>I just could not be arsed to add the API key to do player counts, and now its public. Anyone can use it for anything and the API is public, you just gotta find it.</p>
+        </div>
+
+        <div class="box">
+            <h1>How we host the API?</h1>
+            <p>It is hosted on a Flask server and there are python scripts or dlls to get the player counts from the servers.</p>
+        </div>
+
+        <div class="box">
+            <h1>The API directories:</h1>
+            <p>https://api.example.com/api/scp_sl/plr_count/</p>
+            <p>https://api.example.com/api/mc/plr_count/</p>
+        </div>
+    </div>
+
+</body>
+</html>
