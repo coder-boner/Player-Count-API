@@ -1,7 +1,7 @@
 import requests
 
 API_URL = "http://127.0.0.1:8080/scp_sl/plr_count/"
-API_KEY = "test"
+API_KEY = "API_KEY"
 
 
 def update_player_count(new_count):
